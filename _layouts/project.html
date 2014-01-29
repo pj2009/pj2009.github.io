@@ -15,6 +15,7 @@
 		<link href='http://fonts.googleapis.com/css?family=Lekton:400,700,400italic' rel='stylesheet' type='text/css'>
 		<!-- JQuery Library -->
 		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+		<script type="text/javascript" src="./js/smoothscroll.js"></script>	
 	<body>
 		<!-- container -->
 		<div class="container" id="top">
@@ -25,7 +26,7 @@
 			<div class="content">
 				<!-- content title -->
 				<div class="content-title">
-					<h2>{{ page.type }}</h2>					
+					<h2>{{ page.type[0] }}</h2>					
 				</div>
 				<!-- end content title -->
 
@@ -41,8 +42,13 @@
 				<!-- content divider -->
 				<div class="content-divider"></div>
 				<!-- end content divider -->
+
 				
-				{{ content }}
+				{% include video.html %} 
+
+				{% include content.html %}
+
+
 
 				<section id="backtotop">
 					<p><a href="#top" class="smoothScroll">&#9650;BACK TO TOP</a></p>
