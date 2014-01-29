@@ -1,0 +1,24 @@
+<!-- navigation menu -->
+<nav>
+	<a href="{{ site.url }}/index.html">
+		<img src="{{ site.url }}/images/logo.png" id="logo" alt>
+	</a>
+	
+	<ul>	
+		<li><a class="current-item" href="{{ site.url }}/index.html">WORK</a></li>
+		<li><a href="{{ site.url }}/about.html">ABOUT</a></li>
+		<li><a href="{{ site.url }}/contact.html">CONTACT</a></li>
+	</ul>
+	
+	<!-- recent work -->
+	<ul id="recent-work">
+		<li><h3>RECENT WORK</h3><li>
+		{% for post in site.posts limit:4 %}
+      		<li>
+      			<a href="{{ post.url }}">{{ post.title }}</a>
+      		</li>
+    	{% endfor %}
+	</ul>
+	<!-- end recent work -->			
+</nav>
+<!-- end navigation menu -->
