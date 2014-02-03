@@ -237,7 +237,7 @@ nav a {
 }
 
 .project-img-top {
-	position:absolute;
+	position: absolute;
     width:100%;
 	top: 0;
 	left: 0;
@@ -262,7 +262,7 @@ nav a {
 	-o-filter: grayscale(100%);
 	filter: url('grayscale.svg#greyscale');
     filter: gray; */
-	position: abosolute;
+	/*position: absolute;*/
 	width: 100%;
 	display: block;
 }
@@ -397,34 +397,35 @@ nav a {
 	float: left;
 }
 
-.about-left {
+.about-right {
 	width: 45%;
 	float: left;
 	margin: 30px 0 30px 5%;
 }
 
-.about-left h1 {
+.about-right h1 {
 	margin-bottom: 30px;
 }
 
-.about-left h2 {
+.about-right h2 {
 	margin-bottom: 30px;
 }
 
-.about-left p {
+.about-right p {
 	font-size: 0.8em;
 	line-height: 1.8em;
 	font-family: 'Droid Sans';
 	margin-bottom: 20px;
 }
 
-.about-right {
+.about-left {
 	position: relative;
 	width: 30%;
-	float: right;
+	float: left;
 	/*padding: 2px;*/
-	margin: 30px 5% 30px 0;
+	margin: 30px 0 30px 5%;
 	/*background: #2f2f2f;*/
+	text-align: center;
 }
 
 .self-img {
