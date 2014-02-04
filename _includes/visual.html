@@ -1,9 +1,8 @@
-<!-- project video -->
-<section id="project-preview">
-	<!-- embed video -->
-	<div class="embed-container">
-		<iframe src="{{ page.video }}"></iframe>
-	</div>
-	<!-- embed video -->
-</section>
-<!-- end project video -->
+{% if page.img != null %}
+	<section id="project-visuals">
+		<h3 class="project-h3">Visuals</h3>
+		{% for i in page.img %}
+			<img src="{{ site.url }}/images/{{ page.directory }}/0{{ i }}.jpg" alt>
+		{% endfor %}
+	</section>
+{% endif %}
