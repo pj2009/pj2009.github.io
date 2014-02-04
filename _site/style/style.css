@@ -82,6 +82,7 @@ nav a {
 	font-family: 'Droid Sans', Courier New, Courier;
 	font-size: 0.8em;
 	letter-spacing: 0.2em;
+	text-transform: uppercase;
 }
 
 .menu-divider {
