@@ -4,7 +4,7 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<meta name="viewport" content="width=device-width" />
 		<title>{{ page.title }} - The Portfolio of Jun Peng</title>
-		<link rel='icon' type='image/x-icon' href='images/favicon.ico' />
+		<link rel='icon' type='image/x-icon' href='{{ site.url }}/images/favicon.ico' />
 		<!-- Style Sheets -->
 		<link rel="stylesheet" type="text/css" href="{{ site.url }}/style/reset.css">
 		<link rel="stylesheet" type="text/css" href="{{ site.url }}/style/clearfix.css">
@@ -47,6 +47,8 @@
 				{% include preview.html %} 
 
 				{% include content.html %}
+
+				{{ content }}
 
 				{% include visual.html %}
 
