@@ -15,8 +15,16 @@
 		<link href='http://fonts.googleapis.com/css?family=Lekton:400,700,400italic' rel='stylesheet' type='text/css'>
 		<!-- JQuery Library -->
 		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-		<script type="text/javascript" src="/js/smoothscroll.js"></script>	
+		<script type="text/javascript" src="/js/smoothscroll.js"></script>
+		<script type="text/javascript">
+		$(window).load(function() {
+			$(".loader").fadeOut("slow");
+		})
+		</script>	
 	<body>
+		<!-- loader -->
+		<div class="loader"></div>
+		<!-- end of loader -->
 		<!-- container -->
 		<div class="container" id="top">
 			
@@ -150,7 +158,7 @@
 </section>
 <!-- end of project process -->
 
-				<p><a class='content-link resume-download' target='_blank' href='/bohate/'><span>*</span>LIVE DEMO</a></p>
+				<p><a href='/bohate/' target='_blank' class='content-link resume-download'><span>*</span>LIVE DEMO</a></p>
 
 				
 	<section id="project-visuals">
