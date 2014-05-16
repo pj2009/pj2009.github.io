@@ -1,0 +1,20 @@
+<!-- project item -->
+<ul class="project-list">
+	{% for post in site.posts %}
+		<li class="project-item">
+			<div class="project-overlay">
+				<a href="{{ post.url }}">
+					<img class="project-img-top" src="{{ site.url }}/images/{{ post.directory }}/thumb-mono.jpg" alt>
+					<img class="project-img-bottom" src="{{ site.url }}/images/{{ post.directory }}/thumb.jpg" alt>
+				</a>
+			</div>
+			<div class="project-name">
+				<a href="{{ post.url }}">{{ post.title }}</a>
+			</div>
+			<div class="project-type">
+				<a href="{{ post.url }}">{{ post.type[0] }}</a>
+			</div>
+		</li>
+	{% endfor %}	
+</ul>
+<!-- end project item -->

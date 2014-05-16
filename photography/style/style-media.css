@@ -1,0 +1,169 @@
+@media only screen and (max-width: 1280px) {
+nav {
+	zoom: 0.9;
+}
+}
+
+@media only screen and (max-width: 768px) {
+nav {
+	zoom: 1;
+}
+
+.container {
+	margin: 0 auto;
+	width: 100%;
+	position: relative;
+	padding: 30px 0;
+}
+
+#recent-work {
+	display: none;
+}
+
+#logo {
+	width: 20%;
+}
+
+nav h4 {
+	margin: 20px 0 20px;
+}
+
+nav {
+	position: relative;
+	width: 100%;
+	margin-bottom: 40px;
+}
+
+nav>ul {
+	width: 40%;
+	margin: 0 auto;
+	list-style: none;
+	line-height: 2em;
+	-webkit-padding-start: 0;
+}
+
+nav>ul>li {
+	width: 30%;
+	margin-left: 5%;
+	float: left;
+	list-style: inline;
+	list-style-type: none;
+	list-style-position: inside;
+}
+
+nav>ul>li:first-child {
+	margin-left: 0;
+}
+
+.content {
+	width: 100%;
+	float: left;
+}
+
+.project-item {
+	width: 47%;
+	margin: 0 0.5% 0.5em 0.5%;
+	padding: 1%;
+}
+
+.facebook, .linkedin {
+	width: 15%;
+	padding: 0 0 0 6%;
+}
+}
+
+@media only screen and (max-width: 480px) {
+
+nav>ul {
+	width: 80%;
+	margin: 0 auto;
+	list-style: none;
+	line-height: 2em;
+	-webkit-padding-start: 0;
+}
+
+nav>ul>li {
+	width: 30%;
+	margin-left: 5%;
+	float: left;
+	list-style: inline;
+	list-style-type: none;
+	list-style-position: inside;
+}
+
+nav>ul>li:first-child {
+	margin-left: 0;
+}
+.content h2{
+	font-size: 1.2em;
+}
+
+.content-title {	
+	width: 60%;
+}
+
+.content-nav {
+	width: 20%;
+}
+
+.project-item {
+	width: 96%;
+	margin: 0 auto 20px auto;
+	padding: 2%;
+}
+
+#project-info {
+	width: 90%;
+	margin: 0 5%;
+	float: left;
+}
+
+#project-info>ul {
+	width: 30%;
+	margin-left: 5%;
+	float: left;
+}
+
+#project-info>ul:first-child {
+	margin-left: 0;
+}
+
+#project-description,
+#project-process {
+	width: 90%;
+	margin: 0 5%;
+	float: left;
+}
+
+.copyright {
+	width: 60%
+}
+
+.social {
+	width: 30%;
+}
+
+.facebook, .linkedin {
+	width: 30%;
+	padding: 0 0 0 15%;
+}
+
+.contact-top {
+	width: 80%;
+	margin: 0 10%;
+}
+	
+.contact-left,
+.contact-right {
+	width: 40%;
+	margin: 0;
+	padding: 20px 5%;
+}
+
+.about-left,
+.about-right {
+	width: 90%;
+	margin: 30px 5%;
+}
+
+}

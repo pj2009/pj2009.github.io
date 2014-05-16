@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width" />
+		<title>{{ page.title }} - The Portfolio of Jun Peng</title>
+		<link rel='icon' type='image/x-icon' href='images/favicon.ico' />
+		<!-- Style Sheets -->
+		<link rel="stylesheet" type="text/css" href="{{ site.url }}/style/reset.css">
+		<link rel="stylesheet" type="text/css" href="{{ site.url }}/style/clearfix.css">
+		<link rel="stylesheet" type="text/css" href="{{ site.url }}/style/style.css">
+		<link rel="stylesheet" type="text/css" href="{{ site.url }}/style/style-media.css">
+		<!-- Google Font -->
+		<link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Lekton:400,700,400italic' rel='stylesheet' type='text/css'>
+		<!-- JQuery Library -->
+		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+		<script type="text/javascript">
+		$(window).load(function() {
+			$(".loader").fadeOut("slow");
+		})
+		</script>
+	<body>
+		<!-- loader -->
+		<div class="loader"></div>
+		<!-- end of loader -->
+		<!-- container -->
+		<div class="container project-list-space">
+			
+			{% include sidebar.html %}
+			
+			<!-- content -->
+			<div class="content">
+				<!-- content title -->
+				<div class="content-title">
+					<h2>{{ page.type }}</h2>					
+				</div>
+				<!-- end content title -->
+				
+				<!-- content divider -->
+				<div class="content-divider"></div>
+				<!-- end content divider -->
+				
+				{{ content }}
+								
+				<!-- content divider -->
+				<div class="content-divider"></div>
+				<!-- end content divider -->
+				
+				<!-- footer -->
+				{% include footer.html %}
+				<!-- end footer -->
+			</div>
+			<!-- end content -->
+		</div>
+		<!-- end container -->
+	</body>
+</html>
