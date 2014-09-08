@@ -18,12 +18,29 @@
 		<script type="text/javascript">
 		$(window).load(function() {
 			$(".loader").fadeOut("slow");
+			$("#close-bubble").click(function(e){
+				e.preventDefault();
+				$(".bubble").fadeOut("fast");
+			});
 		})
+		$(document).ready(function(){
+			
+		});
 		</script>
 	<body>
 		<!-- loader -->
 		<div class="loader"></div>
 		<!-- end of loader -->
+
+		<div class="bubble-wrap">
+			<div class="bubble">
+				<p>
+					Go check out my new photography site: <a href="http://p.junpeng.ca" target="_blank">http://p.junpeng.ca</a>
+				</p>
+				<a href="#" id="close-bubble">&#10006;</a>
+			</div>
+		</div>
+
 		<!-- container -->
 		<div class="container project-list-space">
 			
